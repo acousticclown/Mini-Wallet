@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ether Balance Checker</title>
+    <script
+      src="https://kit.fontawesome.com/406f004429.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/checkWeb3.js"></script>
+    <script src="./js/payment.js"></script>
+    <script type="module" src="./js/getBalance.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="heading"><i class="fas fa-wallet"> Mini Wallet</i></h1>
+      <h2 class="address" id="address"></h2>
+    </div>
+    <div class="input-area">
+      <form>
+        <input class="act" id="act" placeholder="Account Number" required />
+        <input
+          class="amt"
+          id="amt"
+          placeholder="Amount ( In Ethers )"
+          required
+        />
+        <button type="submit" class="pay-button">Pay</button>
+      </form>
+      <button class="balance-button" id="check">Check Balance</button>
+      <h2 class="blnc" id="blnc"></h2>
+    </div>
+    <div class="status-menu">
+      <h2 id="status">Status: Pending...</h2>
+    </div>
+  </body>
+</html>

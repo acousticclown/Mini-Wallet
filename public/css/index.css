@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(234, 188, 255);
+  height: 20vh;
+}
+
+.heading {
+  margin: 2rem;
+  color: rgb(136, 37, 136);
+}
+
+.address {
+  margin: 2rem;
+  text-align: center;
+  color: rgb(136, 37, 136);
+}
+
+.input-area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20vh;
+}
+
+.input-area input {
+  margin-left: 2rem;
+  text-align: center;
+  width: 10rem;
+  height: 2rem;
+}
+
+.input-area input:focus {
+  background-color: rgb(136, 37, 136);
+  color: white;
+}
+
+.input-area input:focus::placeholder {
+  color: white;
+}
+
+button {
+  height: 2.5rem;
+  width: 5rem;
+  background-color: rgb(136, 37, 136);
+  color: antiquewhite;
+}
+
+button:hover {
+  background-color: antiquewhite;
+  color: rgb(136, 37, 136);
+  font-weight: 700;
+}
+
+.pay-button {
+  margin: 2.5rem;
+}
+
+.balance-button {
+  margin: 1.5rem;
+}
+
+.blnc {
+  color: rgb(136, 37, 136);
+}
+
+.status-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20vh;
+  background-color: antiquewhite;
+}
+
+.status-menu h2 {
+  color: rgb(131, 74, 0);
+  margin: 2.5rem;
+}
